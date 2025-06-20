@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/8b902bd031.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      
+      <div class="container">
+        <nav>
+          <h1>SHIVAM.</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header_text">
+          <h1>Hello, I'm <br /><span>Shivam</span> kumar</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="ROW">
+          <div class="about_col_1">
+            <img src="images/shiv.png" />
+          </div>
+          <div class="about_col_2">
+            <h1 class="title_1">About Me</h1>
+            <p>
+              I'm shivam Kumar, a 20 year old student from DR. DY Patil <br/>college 
+              of engineering and innovation, talegaon, pune
+              where <br/>I'm currently pursuing my B.Tech in computer science engineering.
+            </p>
+
+            <div class="title_2">
+              <p class="title_2_links active_link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="title_2_links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="title_2_links" onclick="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div class="title_contents active_1" id="skills">
+              <ul>
+                <li><span>Programming language</span><br />Python (beginner)</li>
+                <li><span>Libraries & Frameworks</span><br />NumPy, Pandas, Matplotlib, 
+                  Seaborn, Scikit-learn, Flask (basic)</li>
+                <li>
+                  <span> Machine Learning</span><br />Supervised Learning (Linear Regression, Logistic Regression),<br/>
+                  Model Evaluation (Confusion Matrix, ROC Curve),<br/>
+                  Data Preprocessing & Visualization
+                </li>
+                <li><span>Web Development (Basic)</span><br />HTML, CSS, JavaScript</li>
+              </ul>
+            </div>
+            <div class="title_contents" id="experience">
+              <ul>
+                <li><span>Personal Projects</span><br />Linear Regression ML Model,<br/>
+                  Breast Cancer Prediction,<br/>
+                  Titanic survival Prediction
+                </li>
+                <li><span>Academic Experience</span><br />Applied ML algorithms to real datasets like<br/>Titanic survival,
+                   breast cancer, and student scores.
+                </li>
+                
+              </ul>
+            </div>
+            <div class="title_contents" id="education">
+              <ul>
+                <li><span>2020</span><br />10th from Regional Secondary School, Madhubani, Bihar</li>
+                <li><span>2022</span><br />12th from Ram Krishna College, Madhubani, Bihar</li>
+                <li><span>2022-2026</span><br/>B.Tech (currently pursuing) </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div id="project">
+    <div class="container">
+      <h1 class="title_1">My Project</h1>
+      <div class="project_list">
+        <div>
+          <i class="fa-solid fa-person-rifle"></i>
+          <h2>Concentration Detector</h2>
+          <p>I built a concentration detector that uses your webcam to check if you're focused or distracted. </p>
+          <a href="https://github.com/shivamkrsingh01/concentration-detector-ml">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-apple"></i>
+          <h2>Credit Card Fraud Detection</h2>
+          <p>I developed a credit card fraud detection system using machine learning algorithms to identify and prevent fraudulent transactions.</p>
+          <a href="https://github.com/shivamkrsingh01/credit_card-Fraud-detection">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-palette"></i>
+          <h2>Breast Cancer Prediction</h2>
+          <p>I developed a machine learning model to predict breast cancer.</p>
+          <a href="https://github.com/shivamkrsingh01/ML_breast_cancer-">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="title_1">My Work</h1>
+      <div class="work_list">
+        <div class="work">
+          <img src="images/applicant.webp">
+          <div class="layer">
+            <h3>Concentration Detector</h3>
+            <p>I built a concentration detector that uses your webcam to check if you're focused or distracted.</p>
+            <a href="https://github.com/shivamkrsingh01/concentration-detector-ml"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/credit-cards.webp">
+          <div class="layer">
+            <h3>Credit Card Fraud Detection</h3>
+            <p>I developed a credit card fraud detection system using machine learning algorithms to identify and prevent fraudulent transactions.</p>
+            <a href="https://github.com/shivamkrsingh01/credit_card-Fraud-detection/blob/main/credit_card.ipynb"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/breast-cancer.webp">
+          <div class="layer">
+            <h3>Breast Cancer Prediction</h3>
+            <p>I developed a machine learning model to predict breast cancer.</p>
+            <a href="https://github.com/shivamkrsingh01/ML_breast_cancer-/blob/main/breast_cancer/breastcancer.ipynb"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/shivamkrsingh01?tab=repositories" class="btn">See More</a>
+    </div>
+  </div>
+
+   <div id="contact">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact_1">
+      <div class="content_1_title">
+        <h2 class="title_1">Contact Me</h2>
+        <hr>
+      </div>
+      <input type="hidden" name="access_key" value="d873d2ff-4329-408a-bf13-8da4162fa78f">
+      <input type="text" name="name" placeholder="Your Name..." class="contact_inputs" required>
+      <input type="phone no" name="phone no" placeholder="Phone No..." class="contact_inputs" required>
+      <input type="email" name="email" placeholder="Your Email..." class="contact_inputs" required>
+      <textarea name="message" placeholder="Your Message.." id="Your Message" class="contact_inputs" required></textarea>
+      <button type="submit">Submit <img src="images/arrow_icon.png"></button>
+    </form>
+  </div> 
+
+  <div id="details">
+    <div class="container">
+      <div class="details_1">
+        <h1>More Details</h1>
+        <p><i class="fa-solid fa-envelope"></i> shivam00krsingh@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 7004637728</p>
+        <div class="social_icons">
+          <a href="https://www.facebook.com/profile.php?id=100041120255106"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/shivam-kumar-b525a21a7"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/Shivam_kr01?t=LGAtbcihUo1R7y4K_vJs-Q&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <a href="images/shivamresumee.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
